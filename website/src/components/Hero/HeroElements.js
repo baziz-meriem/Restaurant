@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/pizza-3.jpg';
+import ImgBg from '../../images/pizza-2.jpg';
 
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
@@ -11,7 +11,7 @@ export const HeroContainer = styled.div`
 
 export const HeroContent = styled.div`
   height: calc(100vh - 80px);
-  max-height: 100%;
+  max-height: 80%;
   padding: 0rem calc((100vw - 1300px) / 2);
 `;
 
@@ -28,6 +28,7 @@ export const HeroItems = styled.div`
   text-transform: uppercase;
   line-height: 1;
   font-weight: bold;
+ 
 
   @media screen and (max-width: 650px) {
     width: 100%;
@@ -37,13 +38,16 @@ export const HeroItems = styled.div`
 export const HeroH1 = styled.h1`
   font-size: clamp(2.5rem, 10vw, 5rem);
   margin-bottom: 1rem;
-  box-shadow: 3px 5px #e9ba23;
+  box-shadow: 10px 10px 2px #e7cb38;
   letter-spacing: 3px;
+  
+  
 `;
 
 export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
+  
 `;
 
 export const HeroBtn = styled.button`
@@ -52,10 +56,9 @@ export const HeroBtn = styled.button`
   border: none;
   background: #e31837;
   color: #fff;
-  transition: 0.2s ease-out;
 
   &:hover {
-    background: #ffc500;
+    background: #e7cb38;
     transition: 0.2s ease-out;
     cursor: pointer;
     color: #000;
