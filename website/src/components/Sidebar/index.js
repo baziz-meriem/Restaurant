@@ -4,9 +4,7 @@ import {SidebarContainer,Icon,SidebarMenu,SideBtnWrap,SidebarLink,SidebarRoute,C
 const Sidebar = ({isOpen,toggle}) => {
   return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon>
                 <CloseIcon/>
-            </Icon>
             <SidebarMenu>
                 <SidebarLink to="/">Pizzas</SidebarLink>
                 <SidebarLink to="/">Desserts</SidebarLink>

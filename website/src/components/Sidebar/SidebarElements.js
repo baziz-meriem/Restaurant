@@ -4,7 +4,6 @@ import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
 position: fixed;
-z-index: 999;
 width: 350px;
 height: 100%;
 background: #ffc500;
@@ -20,17 +19,12 @@ right: ${({ isOpen }) => (isOpen ? '0' : '-1000px')};
 `;
 export const CloseIcon = styled(FaTimes)`
 color:#000;
+position: absolute;
+top: 1.2rem;
+right: 1.5rem;
+font-size: 2rem;
+cursor: pointer;
 `
-export const Icon = styled.div`
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
-    background: transparent;
-    border: transparent;
-    font-size: 2rem;
-    cursor: pointer;
-    outline: none;
-  `;
 
 export const SidebarMenu = styled.div`
   display: grid;
@@ -49,7 +43,6 @@ export const SidebarLink = styled(Link)`
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
-  list-style: none;
   transition: 0.2s ease-in-out;
   color: #000;
   cursor: pointer;
@@ -61,25 +54,23 @@ export const SidebarLink = styled(Link)`
 `;
 
 export const SideBtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
+
 `;
 
 export const SidebarRoute = styled(Link)`
-  background: #e31837;
-  white-space: nowrap;
-  padding: 16px 64px;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  text-decoration: none;
+background: #e31837;
+padding: 16px 64px;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+transition: 0.2s ease-in-out;
+text-decoration: none;
 
-  &:hover {
-    transition: 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
-  }
+&:hover {
+  transition: 0.2s ease-in-out;
+  background: #fff;
+  color: #010606;
+}
 `;
