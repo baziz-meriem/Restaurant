@@ -1,0 +1,40 @@
+.container {
+    padding: 4rem 0;
+    flex-direction: column;
+    background: var(--color-black);
+}
+.Bigtitle {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+}
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: var(--font-base);
+    font-weight: 540;
+    font-size: 30px;
+    line-height: 50.5px;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+}
+.menu {
+    display:flex;
+    margin:2rem 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;/*For mobile*/
+}
+.app__specialmenu_img{
+    width:410px;
+    margin:0 2rem;
+}
+.app__specialmenu_img img {
+    width:100%;
+    height:auto;
+}
