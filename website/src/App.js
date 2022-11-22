@@ -8,6 +8,7 @@ import { GlobalStyle } from "./components/GlobalStyles";
 import {productData} from "./components/Products/data"
 import SpecialMenu from './components/SpecialMenu/SpecialMenu';
 import cocktails from "./components/SpecialMenu/data";
+import Gallery from './components/Gallery/Gallery';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero/>
       <SpecialMenu data={cocktails}/>
       <Products heading='Choose your favorite type of pizza' data={productData}/>
+      <Gallery/>
       <Footer/>
     </Router>
      
