@@ -1,10 +1,10 @@
 import React from 'react'
 import { BsInstagram,BsArrowLeftShort,BsArrowRightShort} from 'react-icons/bs';
 import './Gallery.css'
-import gallery01 from '../../images/gallery01.png'
-import gallery02 from '../../images/gallery02.png'
-import gallery03 from '../../images/gallery03.png'
-import gallery04 from '../../images/gallery04.png'
+import gallery01 from '../../images/gallery01.jpg'
+import gallery02 from '../../images/gallery02.jpg'
+import gallery03 from '../../images/gallery03.jpg'
+import gallery04 from '../../images/gallery04.jpg'
 
 
 const Galleryimages = [gallery01,gallery02, gallery03, gallery04]
@@ -31,13 +31,12 @@ const Gallery = () => {
                 {Galleryimages.map((image,index) => (
                     <div className="app__gallery-images-card" key={'gallery_image-${index+1}'}>
                         <img src={image} alt="gallery-image" />
-                        <BsInstagram className='gallery_img-icon' />
                     </div>
                ))}
             </div>
             <div className="app__gallery-arrows">
-                <BsArrowLeftShort className="arrow_icon" onClick={() => scroll('left')} />
-                <BsArrowRightShort className="arrow_icon" onClick={() => scroll('left')} />
+                <BsArrowLeftShort className="gallery__arrow_icon" onClick={() => scroll('left')} />
+                <BsArrowRightShort className="gallery__arrow_icon" onClick={() => scroll('right')} />
 
             </div>
         </div>
