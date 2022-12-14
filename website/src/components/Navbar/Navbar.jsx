@@ -6,19 +6,29 @@ import './Navbar.css';
 import LOGO from '../../images/gericht.png';
 
 const Navbar = ()=>{
+    const navLinks= ["Home","About","Special","Menu","Contact"];
     const [toggleMenu,setToggleMenu] = useState(false);
+    const renderNavLink = (content)=> {
+        const handleClickNav=()=>{
+            const scrollToId = `${content.toLowerCase()}Section`
+            document.getElementById(scrollToId).scrollIntoView({ behavior:"smooth"})
+        }
+        return(
+            <ul key={content}>
+                 <button
+                 onClick={handleClickNav}
+                  >{content}</button>
+            </ul>
+        )
+    }
     return (
         <nav className='app_navbar'>
         <div className="app__navbar-logo">
             <img src={LOGO} alt="logo"/>
         </div>
-        <ul className="app__navbar-links" >
-            <li className="p__opensans"><a href="#" >Home</a></li>
-            <li className="p__opensans"><a href="#" >About</a></li>
-            <li className="p__opensans"><a href="#" >Menu</a></li>
-            <li className="p__opensans"><a href="#" >Contact</a></li>
-            <li className="p__opensans"><a href="#" >Contact</a></li>
-        </ul>
+        <div className="app__navbar-links">  
+            {navLinks.map(nav=>renderNavLink(nav))} 
+        </div>
         <div className="app__navbar-login">
             <a href="#login" className="p__opensans" >Log In/Register</a>
         </div>

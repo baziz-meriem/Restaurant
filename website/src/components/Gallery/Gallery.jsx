@@ -20,7 +20,7 @@ const Gallery = () => {
     }
   return (
  
-      <div className="app__gallery">
+      <div id="aboutSection" className="app__gallery">
         <div className="app__gallery-content">
             <h1>Photo gallery</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur odit sit vel voluptate at non laboriosam ex voluptatem, debitis ab. Amet sunt hic aliquid nam unde recusandae, adipisci dolorem tempora?</p>

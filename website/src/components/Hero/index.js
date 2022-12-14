@@ -16,7 +16,7 @@ const Hero = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <HeroContainer>
+    <HeroContainer id="homeSection">
         <Navbar/>
         <Sidebar isOpen={ isOpen } toggle={ toggle }/>
         <HeroContent>

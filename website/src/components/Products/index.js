@@ -13,7 +13,7 @@ import {
   } from './ProductsElements';
 const Products = ({heading,data}) => {
   return (
-    <ProductsContainer>
+    <ProductsContainer id="menuSection">
       <ProductsHeading>{heading}</ProductsHeading>
       <ProductWrapper>
         {data.map((product,index)=> {
