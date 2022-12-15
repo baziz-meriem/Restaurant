@@ -13,7 +13,7 @@ function MenuItem({title,price,tags}) {
             <p className='parag' style={{ color: '#DCCA87' }}>{price}</p>
         </div>
         </div>
-        <div className='app_menuitem-sub' style={{ color:'#AAA'}}>{tags}</div>
+        <div className='app_menuitem-sub' style={{ color:'#f1dabf'}}>{tags}</div>
     </div>
     
   )

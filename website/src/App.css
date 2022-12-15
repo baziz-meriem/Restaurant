@@ -24,7 +24,7 @@
     text-decoration: none;
   }
   .custom__button {
-    background-color: var(--color-crimson);
+    background-color: #f1dabf;
       color: var(--color-black);
       font-family: var(--font-base);
       font-weight: 700;
@@ -37,4 +37,24 @@
       outline: none;
       cursor: pointer;
   }
-  
+  /*--------------------------------------------*/
+  .filter-container button {
+    margin-top: 2rem;
+    margin-right:2rem;
+    min-width:5rem;
+    padding:0.5rem 1rem;
+    border:none;
+    background: white;
+    color:#362417;
+    border-radius: 1rem;
+    border:2px solid #92817a;
+    font-weight:bold;
+    cursor:pointer;
+  }
+  .filter-container{
+    background-color:  #04030f ;
+  }
+  button.active {
+    background:#f1dabf;
+    color:white;
+  }

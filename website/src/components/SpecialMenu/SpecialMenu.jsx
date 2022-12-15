@@ -6,7 +6,7 @@ import './SpecialMenu.css';
 
 const SpecialMenu = () => {
   return (
-    <div id="specialSection" className="container"> 
+    <div id="specialSection" className="contenair"> 
         <div>
             <h1 className="Bigtitle">Today's Special</h1>
         </div>

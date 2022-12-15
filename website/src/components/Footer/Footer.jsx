@@ -10,7 +10,7 @@ import {
 } from 'mdb-react-ui-kit';
 export default function App() {
   return (
-    <MDBFooter id="contactSection" className='text-center' style={{ backgroundColor:'#ffff'}} color='white'>
+    <MDBFooter id="contactSection" className='text-center' style={{ backgroundColor:'#04030f'}} color='white'>
       <MDBContainer className='p-4 text-center container-fluid ' >
         <section className='mb-4'>
           <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>

@@ -1,7 +1,7 @@
-.container {
+.contenair {
     padding: 4rem 0;
     flex-direction: column;
-    background: var(--color-black);
+    background: #362417;
 }
 .Bigtitle {
     margin-bottom: 2rem;

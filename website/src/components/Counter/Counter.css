@@ -1,7 +1,7 @@
 .counter{
 margin:0;
 padding:20px;
-background-color: #8a7c56;
+background-color:  #04030f ;
 }
 .counter-row{
     display:grid;
@@ -13,7 +13,7 @@ justify-content: center;
 align-items: center;
 padding-left: 1rem;
 padding-right: 1rem;
-border-right: 1px solid #C7C7C7;
+border-right: 3px solid #f1dabf;
 }
 .counter-column:last-child{
     border-right: none;
@@ -22,13 +22,13 @@ border-right: 1px solid #C7C7C7;
 font-weight:600;
 font-size:50px;
 font-family: "Poppins",sans-serif;
-color:#f3c441;
+color:#f1dabf;
 }
 .counter-column span{
     display:block;
     font-weight: 700;
     font-size:18px;
-    color:rgba(0,0,0,0.7);
+    color:#f1dabf;
     line-height: 1.2;
     padding-left: 15px;
     font-family: "Poppins",sans-serif;

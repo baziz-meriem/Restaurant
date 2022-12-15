@@ -1,0 +1,11 @@
+.menu{
+    color:#f1dabf ;
+}
+.menu-img{
+    width: 200px;
+    height: auto;
+    border-radius: 1rem;
+    width:100%;
+    height:30vh;
+    object-fit: cover;
+ }

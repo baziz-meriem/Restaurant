@@ -1,6 +1,6 @@
 .app__gallery {
 padding: 4rem 0 4rem 6rem;
-background-color: var(--color-black);
+background-color: #362417;
 display:flex;
 flex-direction:row;
 }

@@ -6,7 +6,7 @@ import './Navbar.css';
 import LOGO from '../../images/gericht.png';
 
 const Navbar = ()=>{
-    const navLinks= ["Home","About","Special","Menu","Contact"];
+    const navLinks= ["Home","About","Special","Menu","Reviews"];
     const [toggleMenu,setToggleMenu] = useState(false);
     const renderNavLink = (content)=> {
         const handleClickNav=()=>{
